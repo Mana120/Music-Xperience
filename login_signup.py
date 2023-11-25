@@ -189,37 +189,13 @@ def signup_page():
     if st.button("Create Account"):
         create_user(new_username, new_password, first_name, last_name, email)
         # login_page()
-advertisement_playing = False
-def display_advertisement(ad):
-    global advertisement_playing
-
-    ad_placeholder = st.empty()
-
-    # Use f-string to include the link in the ad description
-    ad_popup_content = f'''
-    <div class="advertisement-popup">
-        <a href="{ad["ad_url"]}" target="_blank">
-            <img src="{ad["ad_image_path"]}" alt="{ad["ad_name"]}" >
-            <div style="font-size: 18px; margin-top: 10px; height: 500px; max-width:10000px;">{ad["ad_description"]}</div>
-        </a>
-    </div>
-    '''
-
-    ad_placeholder.markdown(ad_popup_content, unsafe_allow_html=True)
 
     # Increment ad clicks
     cursor = conn.cursor(buffered=True)
     cursor.execute(f"UPDATE Advertisements SET ad_clicks = ad_clicks + 1 WHERE ad_id = {ad['ad_id']}")
     conn.commit()
 
-    advertisement_playing = True
-
-    # Wait for 10 seconds
-    for _ in range(10):
-        time.sleep(1)
-
-    ad_placeholder.empty()
-    advertisement_playing = False
+    
 def delete_user_and_entries(user_id):
     cursor = conn.cursor(buffered=True)
     cursor.execute("DELETE FROM subscriptions WHERE userid = %s", (user_id,))
