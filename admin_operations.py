@@ -190,7 +190,7 @@ def add_song_page():
     plays = st.number_input("Plays:", min_value=0, step=1, value=0)
 
     if st.button("Add Song"):
-        add_song(title, artist, album, genre, duration, path, album_order, plays)
+        add_song(song_id,title, artist, album, genre, duration, path, album_order, plays)
 
 def delete_song_page():
     st.markdown('<p style="color: forestgreen; font-size: 38px; font-weight: bold;">Delete Song</p>', unsafe_allow_html=True)
