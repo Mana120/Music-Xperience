@@ -25,3 +25,20 @@ daily, ensuring a streamlined and up-to-date notification system. Overall, Music
 aims to provide users with a feature-rich platform for managing and enjoying their music
 preferences, while keeping them informed about relevant activities and updates within the
 music library.
+
+
+Login Page 
+
+![image](https://github.com/Mana120/Music-Xperience/assets/90771545/2ca87102-e874-4bb3-93fa-58aa3d3a5ded)
+
+
+User Page
+
+![image](https://github.com/Mana120/Music-Xperience/assets/90771545/5ebec33c-620d-450b-b455-ab4079de9a79)
+
+Admin Page
+
+![image](https://github.com/Mana120/Music-Xperience/assets/90771545/f785914a-db6b-45fd-a867-af961dc2f7ce)
+
+
+
