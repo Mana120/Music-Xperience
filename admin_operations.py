@@ -10,7 +10,7 @@ from tabulate import tabulate
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Shreya@1989",
+    password="password",
     database="music"
 )
 def is_procedure_exists(cursor, procedure_name):

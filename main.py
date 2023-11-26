@@ -29,7 +29,7 @@ temp = 0
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Shreya@1989",
+    password="password",
     database="music"
 )
 custom_css = """

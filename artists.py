@@ -13,7 +13,7 @@ import hashlib
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Shreya@1989",
+    password="password",
     database="music"
 )
 def get_unique_artists():

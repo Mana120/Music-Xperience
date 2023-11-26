@@ -11,7 +11,7 @@ import re
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Shreya@1989",
+    password="passsword",
     database="music"
 )
 def is_stored_procedure_exists(cursor, procedure_name):
