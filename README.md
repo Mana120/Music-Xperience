@@ -26,6 +26,50 @@ aims to provide users with a feature-rich platform for managing and enjoying the
 preferences, while keeping them informed about relevant activities and updates within the
 music library.
 
+## Overview
+
+Music Xperience is a music streaming web application made using MySQL database. It enables users to sign up, log in, create playlists, search for songs, view albums, and manage their music subscriptions. Administrators have additional functionalities to manage users and the music database.
+
+## ER Diagram
+
+<img width="1325" alt="350109135-cb118d12-ee7a-40e2-af09-f53833a4aebd" src="https://github.com/user-attachments/assets/0cd08acc-be8f-40ca-bf62-cc415d9cb161">
+
+## Relational Schema
+
+<img width="838" alt="350109269-c9c9ebb2-4a01-4f10-bfa8-729ae817367f" src="https://github.com/user-attachments/assets/0d8b9e6f-791f-4f72-a196-724e6c742503">
+
+## Features
+
+- **User Authentication:** Secure sign-up, login, and password recovery.
+- **Admin and User Roles:** Distinct functionalities for administrators and regular users.
+- **Music Management:** Create and manage playlists, search for songs, view albums, and play tracks.
+- **Subscription Management:** Users can manage their subscriptions with different plans.
+- **Custom Styling:** Personalized interface styling for an enhanced user experience.
+- **Notifications:** Keep users informed about new content and subscription changes.
+
+## Main Modules
+
+### `app.py`
+
+The main script that runs the Streamlit application. It handles user authentication, displays the main interface, and coordinates other functions based on user interaction.
+
+### `login_signup.py`
+
+Manages user authentication processes, including login, sign-up, password recovery, and admin login functionalities.
+
+### `admin_operations.py`
+
+Contains functions for administrative tasks such as managing users and the music database.
+
+### `song_playlists_operations.py`
+
+Handles operations related to songs, albums, and playlists, including searching for songs, displaying albums, and managing playlists.
+
+### `notifications.py`
+
+Manages user notifications, keeping users informed about important events like new content and subscription updates.
+
+
 
 Login Page 
 
@@ -39,6 +83,10 @@ User Page
 Admin Page
 
 ![image](https://github.com/Mana120/Music-Xperience/assets/90771545/f785914a-db6b-45fd-a867-af961dc2f7ce)
+
+## Contributors
+- Shreya Kashyap ([@Shreya241103](https://github.com/shreya241103))
+- Sai Manasa Nadimpalli ([@Mana120](https://github.com/Mana120))
 
 
 
